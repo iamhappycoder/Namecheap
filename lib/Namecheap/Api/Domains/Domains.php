@@ -73,7 +73,7 @@ class Domains extends Namecheap
      * @return \Namecheap\Api\Response
      * @see https://www.namecheap.com/support/api/methods/domains/set-contacts.aspx
      */
-    public function setContacts()
+    public function setContacts(array $params)
     {
         return $this->client->send($this->namespace.__FUNCTION__, $params);
     }
